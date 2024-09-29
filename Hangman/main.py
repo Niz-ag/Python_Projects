@@ -8,6 +8,7 @@ class Hangman:
 
     def Rand(self):
         return random.choice(list(web2lowerset))
+        
     
     def __init__(self) -> None:
         Name: str= input("What is your name\n")
@@ -19,7 +20,7 @@ class Hangman:
     def Process(self) -> None:
         Guess : list=[]
         Randome:str = self.Rand()
-        # print (Randome)
+        print (Randome)
       
         for index in Randome:
             Guess.append("_")
